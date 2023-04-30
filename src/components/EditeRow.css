@@ -1,0 +1,142 @@
+:root {
+    --background:#ef98ed;
+    --background:#082640;
+    --textColor: #eef1f4;
+  }
+.editRow-wrapper{
+    margin-top: 20px;
+    background-color:var( --background);
+    width: 400px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.editRow-top{
+    display: flex;
+    justify-content: space-between;
+}
+.editRow-input{
+    border-radius: 16px;
+    background-color: var( --textColor);
+    border: none;
+    margin: 4px 1px;
+    padding: 7px 5px;
+    width: 208px;
+    transition: all 0.3s;
+}
+.editRow-file{
+    display: none;
+}
+.editRow-img{
+     margin-right:20px;
+    margin-top: 10px;
+    width: 135px;
+    height: 143px;
+    border-radius: 50%;
+}
+.editRow-top-left{
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.editRow-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*  */
+.save{
+    position: relative;
+    font-weight: bold;
+    color: var( --textColor);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:var( --background);
+    border-color: var( --textColor);
+       width: 83px;
+       height: 32px;
+    margin-right: 10px;
+    transition: .2s ease all;
+    overflow: hidden;
+    cursor: pointer;
+}
+.save span{
+    transition: .2s ease all;
+    position: absolute;
+    left: 20px;
+    top: 7px;
+    
+}
+.save-icon{
+    position: absolute;
+    color: var( --textColor);
+    /* left:28px */
+    left: -28px;
+   
+}
+.save:hover{
+    background-color: var( --textColor);
+    color:var( --background);
+   
+}
+.save:hover span{
+  color:var( --background);
+  left: 90px;
+}
+.save:hover .save-icon{
+    color:var( --background);
+    font-size: 22px;
+    left: 30px;
+    top: 5px;
+    transition: .2s ease all;
+  }
+  /* cancle */
+
+  .cancle{
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    color: var( --textColor);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:var( --background);
+    border-color: var( --textColor);
+       width: 83px;
+       height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.cancle span{
+    transition: .2s ease all;
+    position: absolute;
+    left: 17px;
+    top: 7px;
+    
+}
+.cancle-icon{
+    position: absolute;
+    color: var( --textColor);
+    /* left:28px */
+    left: -28px;
+}
+.cancle:hover{
+    background-color: var( --textColor);
+    color:var( --background);
+}
+.cancle:hover span{
+  color:var( --background);
+  left: 90px;
+}
+.cancle:hover .cancle-icon{
+    color:var( --background);
+    font-size: 22px;
+    left: 28px;
+    top: 4px;
+    transition: .2s ease all;
+  }

@@ -1,0 +1,198 @@
+:root {
+  --background:#082640; 
+  --textColor: #eef1f4;
+}
+body{
+background-color: var(--textColor);
+height: 92vh;
+box-sizing: border-box;
+/* overflow: hidden; */
+
+}
+
+
+.form-add-h1{
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 33px;
+  color: var( --background);
+}
+.form-add-h1::before{
+  top: 34px;
+  content: '';
+  width: 183px;
+  height: 2px;
+  background-color: rgba(65, 90, 113, 0.534);
+  border-radius: 4px;
+  position: absolute;
+
+}
+
+/* [type="file"] {
+    height: 0;
+    overflow: hidden;
+    width: 0;
+  } */
+  .lable-file {
+    border-radius: 16px;
+    background-color: var(--background);
+    border: none;
+    font-weight: bold;
+    color:var(--textColor);
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s;
+    width: 356px;
+    margin: 20px;
+    text-align: center;
+}
+.lable-file:hover {
+    background-color: var(--textColor);
+    color: var(--background);
+    border: 1px solid var(--background);
+    }
+    
+    
+    .add-form-buttom{
+      cursor: pointer;
+      font-weight: bold;
+      color: var(--background);
+      text-align: center;
+      border: 2px solid black;
+      border-radius: 16px;
+      background-color: var(--textColor);
+      border-color:  var(--background) ;
+      margin: 20px 0;
+      padding: 20px;
+      width: 356px;
+      transition: all 0.3s;
+    }
+    /* .add-form-buttom-save{
+      margin-right: 5px;
+    }*/
+    .add-form-buttom-cancle{
+     padding: 18px 20px;
+    } 
+    .add-form-buttom:hover{
+      background-color:var(--background) ;
+      border-color:  var(--textColor) ;
+      color: var(--textColor);
+    }
+
+
+  .form-div{
+    position: relative;
+  }
+
+  .lable-input{
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 0 0.3rem;
+    margin: 0 0.5rem;
+    white-space: nowrap;
+    transform-origin: 0 0;
+    color: var(--textColor);
+    transition: .02s ease all;
+    -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+      .form-add .form-add-input:focus,
+.form-add  .form-add-input:valid,
+ .form-add .form-add-input:hover{
+    border: 1px solid var(--background);
+    background-color: var(--textColor);
+ } 
+
+
+ .form-add-input:focus ~.lable-input-firstName,
+ .form-add-input:hover ~.lable-input-firstName,
+ .form-add-input:valid ~.lable-input-firstName
+ {
+  transform: translate(-195%, -239%) scale(.9);
+  /* transform: translate(-179%, -226%) scale(.8); */
+    color: var(--background);
+    /* background-color: var(--textColor); */
+ }
+ .form-add-input:focus ~.lable-input-lastName,
+ .form-add-input:hover ~.lable-input-lastName,
+ .form-add-input:valid ~.lable-input-lastName{
+  /* transform: translate(-191%, -227%) scale(.8); */
+    color: var(--background);
+    transform: translate(-200%, -238%) scale(.9);
+
+    /* background-color: var(--textColor); */
+ }
+ .form-add-input:focus ~.lable-input-phoneNumber,
+ .form-add-input:hover ~.lable-input-phoneNumber,
+ .form-add-input:valid ~.lable-input-phoneNumber{
+  /* transform: translate(-145%, -234%) scale(.8); */
+    color: var(--background);
+    transform: translate(-153%, -243%) scale(.9);
+    /* background-color: var(--textColor); */
+ }
+ .form-add-input:focus ~.lable-input-email,
+ .form-add-input:hover ~.lable-input-email,
+ .form-add-input:valid ~.lable-input-email{
+  /* transform: translate(-299%, -229%) scale(.8); */
+    color: var(--background);
+    transform: translate(-321%, -238%) scale(.9);
+
+    /* background-color: var(--textColor); */
+ }
+ /*  */
+ 
+
+ 
+
+.form-add{
+  max-width: 405px;
+  max-height: 400px;
+  display: flex;
+  justify-content: stretch;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  left: 87px;
+  margin: 100px auto;
+    
+}
+.form-add-input{
+    border-radius: 16px;
+    background-color: var(--background);
+    border: none;
+    margin: 20px;
+    padding: 20px;
+    width: 356px;
+    transition: all 0.3s;
+}
+.nav-link-addForm{
+  position: absolute;
+  top: 20px;
+    right: 72px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--background);
+  transition: all 0.3s;
+}
+.nav-link-addForm:hover,
+.nav-link-addForm:hover .nav-link-addForm-icon
+{
+  color: var(--background);
+  font-size: 24px;
+}
+.nav-link-addForm:hover .nav-link-addForm-icon{
+  font-size: 28px;
+}
+.nav-link-addForm-icon{
+  position: absolute;
+  font-size: 23px;
+  top: -1px;
+  transition: all 0.3s;
+
+}

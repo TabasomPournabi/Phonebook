@@ -1,0 +1,203 @@
+:root {
+    --background:#082640;
+    --textColor: #eef1f4;
+    --gray:#415a7188
+  }
+body{
+    background-color:var( --textColor);
+}
+@media screen and (max-width: 1529px) {
+    .contact-container {
+     justify-content: space-around;
+    }
+  }
+.contacts{
+    margin: 107px auto;
+    max-width: 631px;
+
+}
+.contacts-h1{
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 33px;
+    color: var( --background);
+}
+.contacts-h1::before{
+    top: 34px;
+    content: '';
+    width: 138px;
+    height: 2px;
+    background-color:var(--gray);
+    border-radius: 4px;
+    position: absolute;
+
+}
+.contact-container{
+    /* overflow-y: hidden;
+     */
+     /* overflow: visible; */
+    flex-wrap:wrap;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.contact-wrapper{
+    margin-top: 20px;
+    background-color:var( --background);
+    width: 434px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 16px;
+
+
+}    
+
+.contacts-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contacts-top img{
+    margin-right:20px;
+    margin-top: 10px;
+    width: 135px;
+    height: 143px;
+    border-radius: 50%;
+}
+.contacts-top-left{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.contacts-top-left> *{
+    margin-bottom: 4px;
+    margin-top: 4px;
+    color:var( --textColor);
+    font-size: 18px;
+    font-weight: 600;
+}
+.contactc-bottom{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.edit{
+    position: relative;
+    font-weight: bold;
+    color: var( --textColor);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:var( --background);
+    border-color: var( --textColor);
+       width: 83px;
+       height: 32px;
+    margin-right: 10px;
+    transition: .2s ease all;
+    overflow: hidden;
+    cursor: pointer;
+}
+.edit span{
+    transition: .2s ease all;
+    position: absolute;
+    left: 24px;
+    top: 7px;
+    
+}
+.edit-icon{
+    position: absolute;
+    color: var( --textColor);
+    /* left:28px */
+    left: -28px;
+}
+.edit:hover{
+    background-color: var( --textColor);
+    color:var( --background);
+}
+.edit:hover span{
+  color:var( --background);
+  left: 90px;
+}
+.edit:hover .edit-icon{
+    color:var( --background);
+    left: 31px;
+    top: 8px;
+    transition: .2s ease all;
+  }
+  /* delete */
+
+  .delete{
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+    color: var( --textColor);
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 16px;
+    background-color:var( --background);
+    border-color: var( --textColor);
+       width: 83px;
+       height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.delete span{
+    transition: .2s ease all;
+    position: absolute;
+    left: 19px;
+    top: 7px;
+    
+}
+.delete-icon{
+    position: absolute;
+    color: var( --textColor);
+    /* left:28px */
+    left: -28px;
+}
+.delete:hover{
+    background-color: var( --textColor);
+    color:var( --background);
+}
+.delete:hover span{
+  color:var( --background);
+  left: 90px;
+}
+.delete:hover .delete-icon{
+    color:var( --background);
+    left: 31px;
+    top: 8px;
+    transition: .2s ease all;
+  }
+
+/*add contacts  */
+.add-contacts{
+    margin-top: 20px;
+    background-color:var( --background);
+    width: 434px;
+    height: 205px;
+    border-radius: 16px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+.add-contacts:hover .add-icon{
+    transform: scale(0.7);
+    opacity: 0.33;
+}
+.add-icon{
+    width: 200px;
+    height: 200px;
+    color: var( --textColor);
+    
+    transition: .5s ease all;
+}
+.margin{
+    margin-left: 10px;
+    margin-right: 10px;
+}

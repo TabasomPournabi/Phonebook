@@ -1,0 +1,112 @@
+.form-add-label {
+    display: block;
+    position: relative;
+  }
+  
+  .form-add-label label,
+  .form-add-label>span {
+    color: grey;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: text;
+    font-size: 120%;
+    opacity: 1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  
+  .form-add-label select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  
+  .form-add-label textarea {
+    width: 100%;
+  }
+  
+.form-add-label input,
+.form-add-label select,
+.form-add-label textarea {
+  font-size: 15px;
+  font-weight: normal !important;
+  padding-top: 1.3em;
+  margin-bottom: 2px;
+  border: 0;
+  height: 45px;
+  border-radius: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+
+.form-add-label input::-webkit-input-placeholder,
+.form-add-label select::-webkit-input-placeholder,
+.form-add-label textarea::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.form-add-label input::-moz-placeholder,
+.form-add-label select::-moz-placeholder,
+.form-add-label textarea::-moz-placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+
+.form-add-label input:-ms-input-placeholder,
+.form-add-label select:-ms-input-placeholder,
+.form-add-label textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: all .2s;
+}
+
+.form-add-label input::placeholder,
+.form-add-label select::placeholder,
+.form-add-label textarea::placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.form-add-label input:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+.form-add-label select:placeholder-shown:not(:focus)::-webkit-input-placeholder,
+.form-add-label textarea:placeholder-shown:not(:focus)::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.form-add-label input:placeholder-shown:not(:focus)::-moz-placeholder,
+.form-add-label select:placeholder-shown:not(:focus)::-moz-placeholder,
+.form-add-label textarea:placeholder-shown:not(:focus)::-moz-placeholder {
+  opacity: 0;
+}
+
+.form-add-label input:placeholder-shown:not(:focus):-ms-input-placeholder,
+.form-add-label select:placeholder-shown:not(:focus):-ms-input-placeholder,
+.form-add-label textarea:placeholder-shown:not(:focus):-ms-input-placeholder {
+  opacity: 0;
+}
+
+.form-add-label input:placeholder-shown:not(:focus)::placeholder,
+.form-add-label select:placeholder-shown:not(:focus)::placeholder,
+.form-add-label textarea:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.form-add-label input:placeholder-shown:not(:focus)+*,
+.form-add-label select:placeholder-shown:not(:focus)+*,
+.form-add-label textarea:placeholder-shown:not(:focus)+* {
+  font-size: 140%;
+  opacity: .5;
+  top: 1.3em;
+}
+
+.form-add-label input:focus,
+.form-add-label select:focus,
+.form-add-label textarea:focus {
+  outline: 0;
+  border-color: #4285f4;
+}
+
+.form-add-label select {
+  padding-right: 1em;
+}
